@@ -56,3 +56,11 @@ Empty ->
 VS   -> 'okur' | 'görür' | 'sever' | 'alır' | 'yapar'
 Conj -> 've' | 'veya'
 ```
+Para esto:
+* `S`: oracion: Esta puede ser sujeto + verbo + objeto o solo sujeto + verbo
+* `SN`: sintagma nominal. Puede ser un nombre o varios unidos por conjunción.
+* `N`: nombre, separado en dos categorías según armonía vocálica.
+* `NP` / `NF`: nombre con vocal posterior / frontal.
+* `RP` / `RF`: raíz posterior / frontal.
+* `TP` / `TF`: terminación de plural posterior (`lar`) / frontal (`ler`), o vacía si es singular.
+* La separación entre raíz y terminación es lo que permite validar que el sufijo plural usado sea el correcto para esa raíz.
