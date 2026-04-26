@@ -1,0 +1,5 @@
+# Gramatica del Idioma Turco
+Evidencia: Generacion y Limpieza de Gramatica
+
+## Contexto
+El turco es un idioma de la familia turca hablado por más de 80 millones de personas. PEro a diferencia del español o del ingles, en turco la mayoría de la informacion gramatical se construye agregando sufijos a la raiz de la palabra (OptiLingo, 2026). Y una de sus caracteristicas mas particulares es la armonia vocalica, una regla que obliga a que las vocales del sufijo coincidan con la ultima vocal de la raiz
