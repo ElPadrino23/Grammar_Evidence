@@ -38,3 +38,21 @@ Verbos:
 Conjunciones:
 * `ve`: y
 * `veya`: o
+
+## Modelos
+
+### Gramatica inicial (Con recursividad a la izquierda y ambiguedad)
+```
+S    -> SN VS SN | SN VS
+SN   -> SN Conj SN | N
+N    -> NP | NF
+NP   -> RP TP
+NF   -> RF TF
+RP   -> 'kitap' | 'kapı' | 'çocuk' | 'araba' | 'kadın'
+RF   -> 'ev' | 'kedi' | 'göz' | 'gün' | 'öğretmen'
+TP   -> 'lar' | Empty
+TF   -> 'ler' | Empty
+Empty ->
+VS   -> 'okur' | 'görür' | 'sever' | 'alır' | 'yapar'
+Conj -> 've' | 'veya'
+```
