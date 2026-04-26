@@ -109,7 +109,8 @@ VS    -> 'okur' / 'görür' / 'sever' / 'alır' / 'yapar'
 Conj  -> 've' / 'veya'
 ```
 
-
+## Implementacion
+Lo implemente en Python usando la librería NLTK con CFG, para definir la gramatica y ChartParser para poder procesar y analizar las oraciones. Como la gramatica separa la raiz de el final, Entonces utilizamos la funcion para separar, la funcion es: separate que divide cada palabra en raiz y su sufijo (tipo:  `çocuklar` → `çocuk lar`) esto es lo que nos ayuda a validar que el sufijo usado sea el correcto: si alguien escribe `kitapler`, la funcion tratara de separarlo pero si no encuentra una regla que lo acepte `kitap ler` (porque `kitap` es raiz posterior y solo se puede combinar con `lar`) la oracion se rechaza
 
 
 
