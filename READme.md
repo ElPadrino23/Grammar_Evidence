@@ -89,3 +89,20 @@ SN_A  -> Conj SNP SN_A | Empty
 SNP   -> N SNP_A
 SNP_A -> SNP | Empty
 ```
+
+
+
+
+
+
+## Referencias
+
+Adams, M. D., Hollenbeck, C., & Might, M. (2016). On the complexity and performance of parsing with derivatives. *Proceedings of the 37th ACM SIGPLAN Conference on Programming Language Design and Implementation*, 224–236. https://doi.org/10.1145/2908080.2908128
+
+NLTK. (s.f.). Natural Language Toolkit. https://www.nltk.org/
+
+Turkish Language Learning. (15 de julio, 2025). Ultimate Turkish Grammar Guide. https://turkishlanguagelearning.com/turkish-grammar-rules/
+
+Turkish Textbook. (21 de febrero, 2025). Vowel harmony. https://www.turkishtextbook.com/vowel-harmony/
+
+Optilingo (5 de mayo, 2023) https://www.optilingo.com/blog/turkish/everything-about-the-turkish-language/
