@@ -70,3 +70,13 @@ Para esto:
 `TP` / `TF`: terminacion del plural  (`lar`) o del frontal (`ler`), en caso de que sea singular, de queda vacia
 
 La separación entre raiz y terminacion es lo que nos permitira validar que el sufijo plural usado sea  correcto para esa raiz
+
+### Eliminacion de ambigüedad
+La regla `SN -> SN Conj SN | N` es ambigua. Una oracion con dos conjunciones como `çocuklar ve kadınlar ve kediler` puede generar dos áaboles distintos para formar la oracion, esto segun como se agrupen las palabras
+
+Esto se elimina introduciendo un no terminal intermedio SNP:
+
+```
+SN  -> SN Conj SNP / SNP
+SNP -> SNP / N
+```
