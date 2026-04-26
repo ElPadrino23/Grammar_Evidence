@@ -13,3 +13,28 @@ El turco tiene un unico sufijo de plural, y este cambia segun la armonia vocalic
 
 2. Sufijo `-ler`: se agrega cuando la ultima vocal de la raiz es **frontal** (e, i, ö, ü). Ejemplo: `ev` (casa) -> `evler` (casas)
 
+### Vocabulario
+Sustantivos con vocal post (utilizan `-lar`):
+* `kitap`: libro
+* `kapı`: puerta
+* `çocuk`: niño
+* `araba`: coche
+* `kadın`: mujer
+
+Sustantivos con vocal inicial (toman `-ler`):
+* `ev`: casa
+* `kedi`: gato
+* `göz`: ojo
+* `gün`: día
+* `öğretmen`: profesor
+
+Verbos:
+* `okur`: lee
+* `görür`: ve
+* `sever`: ama
+* `alır`: toma
+* `yapar`: hace
+
+Conjunciones:
+* `ve`: y
+* `veya`: o
