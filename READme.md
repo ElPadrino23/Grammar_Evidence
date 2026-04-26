@@ -8,3 +8,4 @@ Para esta evidencia escogi un subconjunto del turco enfocado en la formacion del
 
 ### Reglas del plural en turco
 El turco tiene un unico sufijo de plural, y este cambia segun la armonia vocalica menor (Turkish Language Learning, 2025):
+
