@@ -113,6 +113,25 @@ Conj  -> 've' / 'veya'
 Lo implemente en Python usando la librería NLTK con CFG, para definir la gramatica y ChartParser para poder procesar y analizar las oraciones. Como la gramatica separa la raiz de el final, Entonces utilizamos la funcion para separar, la funcion es: separate que divide cada palabra en raiz y su sufijo (tipo:  `çocuklar` → `çocuk lar`) esto es lo que nos ayuda a validar que el sufijo usado sea el correcto: si alguien escribe `kitapler`, la funcion tratara de separarlo pero si no encuentra una regla que lo acepte `kitap ler` (porque `kitap` es raiz posterior y solo se puede combinar con `lar`) la oracion se rechaza
 
 
+## Pruebas
+
+### Oraciones aceptadas
+1. `Çocuklar kitap okur` — Los niños leen libros
+2. `Kediler ev görür` — Los gatos ven la casa
+3. `Kadınlar araba sever` — Las mujeres aman el coche
+4. `Öğretmenler kitaplar okur` — Los profesores leen libros
+5. `Çocuklar ve kadınlar kitap okur` — Los niños y las mujeres leen libros
+6. `Çocuklar kapılar veya arabalar görür` — Los niños ven puertas o coches
+7. `Kediler ve çocuklar ev sever` — Los gatos y los niños aman la casa
+
+### Oraciones rechazadas
+1. `Çocukler kitap okur` — Plural incorrecto: `çocuk` necesita `-lar` no `-ler`
+2. `Evlar kedi görür` — Plural incorrecto: `ev` necesita `-ler` no `-lar`
+3. `Kitapler okur` — Plural incorrecto
+4. `Çocuklar ve okur` —  sin segundo sustantivo
+5. `Kediler kapılar arabalar` — sin verbo
+
+
 
 ## Referencias
 
