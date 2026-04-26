@@ -131,7 +131,22 @@ Lo implemente en Python usando la librería NLTK con CFG, para definir la gramat
 4. `Çocuklar ve okur` —  sin segundo sustantivo
 5. `Kediler kapılar arabalar` — sin verbo
 
+### Demostracion con analisis LL1
+La gramatica final cumple las condiciones porque ya no es ambigua y no tiene recursividad a la izquierda, para una oracion como `Çocuklar kitap okur` el parser deriva de izquierda a derecha
 
+```
+S → SN VS SN
+  → SNP SN_A VS SN
+  → N SNP_A SN_A VS SN
+  → NP SNP_A SN_A VS SN
+  → RP TP SNP_A SN_A VS SN
+  → çocuk TP SNP_A SN_A VS SN
+  → çocuk lar SNP_A SN_A VS SN
+  → çocuk lar Empty SN_A VS SN
+  → çocuk lar Empty VS SN     (SN_A → Empty)
+  → çocuk lar okur SN
+  → ... → çocuk lar okur kitap
+```
 
 ## Referencias
 
