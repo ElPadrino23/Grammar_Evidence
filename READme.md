@@ -134,26 +134,8 @@ Lo implemente en Python usando la librería NLTK con CFG, para definir la gramat
 ### Demostracion con analisis LL1
 La gramatica final cumple las condiciones porque ya no es ambigua y no tiene recursividad a la izquierda, para una oracion como `Çocuklar kitap okur` el parser deriva de izquierda a derecha
 
-VALIDA: Çocuklar kitap okur
-                          S
-                 _________|__________
-                SN                   |
-                |                    |
-               SNP                   |
-        ________|_________           |
-       |                SNP_A        |
-       |                  |          |
-       |                 SNP         |
-       |              ____|_____     |
-       |             N          |    |
-       |             |          |    |
-       N             NP         |    |
-       |         ____|____      |    |
-       NP       |         TP  SNP_A  |
-   ____|___     |         |     |    |
-  RP       TP   RP      Empty Empty  VS
-  |        |    |         |     |    |
-çocuk     lar kitap      ...   ...  okur
+<image src="/images/prueba.png" alt="Prueba1">
+
 
 ```
 S → SN VS SN
