@@ -90,6 +90,24 @@ SNP   -> N SNP_A
 SNP_A -> SNP | Empty
 ```
 
+### Gramatica final
+```
+S     -> SN VS SN / SN VS
+SN    -> SNP SN_A
+SN_A  -> Conj SNP SN_A / Empty
+SNP   -> N SNP_A
+SNP_A -> SNP / Empty
+N     -> NP / NF
+NP    -> RP TP
+NF    -> RF TF
+RP    -> 'kitap' / 'kapı' / 'çocuk' / 'araba' / 'kadın'
+RF    -> 'ev' / 'kedi' / 'göz' / 'gün' / 'öğretmen'
+TP    -> 'lar' / Empty
+TF    -> 'ler' / Empty
+Empty ->
+VS    -> 'okur' / 'görür' / 'sever' / 'alır' / 'yapar'
+Conj  -> 've' / 'veya'
+```
 
 
 
