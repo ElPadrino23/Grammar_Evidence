@@ -80,3 +80,12 @@ Esto se elimina introduciendo un no terminal intermedio SNP:
 SN  -> SN Conj SNP / SNP
 SNP -> SNP / N
 ```
+
+### Eliminacioon de recursividad izquierda
+La regla anterior y SNP tiene recursividad a la izquierda, pero aplicando la transformación estándar `A -> A α | β` se reescribe como `A -> β A'` y `A' -> α A' | e`:
+```
+SN    -> SNP SN_A
+SN_A  -> Conj SNP SN_A | Empty
+SNP   -> N SNP_A
+SNP_A -> SNP | Empty
+```
