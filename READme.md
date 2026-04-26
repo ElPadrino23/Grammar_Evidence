@@ -151,6 +151,19 @@ S → SN VS SN
 Salida del programa para `Çocuklar kitap okur`:
 
 
+### Jerarquia de Chomsky
+
+Antes de la limpieza: la gramatica es de Tipo 2 . Cada regla tiene un solo no terminal del lado izquierdo y el lado derecho mezcla terminales y no terminales. No es Tipo 3, porque varias reglas (como S -> SN VS SN) tienen mas de un no terminal del lado derecho, lo que rompe la forma lineal que necesitan las gramaticas regulares (Optilingo, 2023)
+
+Despues de la limpieza: la gramatica sigue siendo Tipo 2. Quitar la ambiguedad y la recursividad izquierda no cambia la clase del lenguaje ni las cadenas que acepta, solo reorganiza las reglas para que pueda procesarlas sin volver atras ni entrar en loop
+
+### Complejidad temporal
+
+Antes de la limpieza: con la gramatica ambigua y con recursividad izquierda, un parser puede entrar en un loop recursivo o explorar multiples arboles para la misma cadena, lo que en el peor caso da complejidad exponencial. Incluso con algoritmos generales
+
+Despues de la limpieza: con la gramatica LL1 un parser puede analizar la cadena en O(n), porque cada token necesita una sola decision sin necesidad de volver atras. En la implementacion con NLTK se usa ChartParser, que es un parser general con complejidad O(n3) sin importar si la gramatica es LL1, pero el resultado es el mismo: un solo arbol por cadena valida y rechazo inmediato de las invalidas.
+
+La diferencia importa: una gramatica LL(1) permite construir compiladores e interpretes eficientes para lenguajes reales, mientras que una gramatica ambigua o con recursividad izquierda no se puede usar directamente en parsers de produccion.
 
 ## Referencias
 
