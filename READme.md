@@ -147,6 +147,10 @@ S → SN VS SN
   → çocuk lar okur SN
   → ... → çocuk lar okur kitap
 ```
+### Ejemplo de arbol generado
+Salida del programa para `Çocuklar kitap okur`:
+
+
 
 ## Referencias
 
